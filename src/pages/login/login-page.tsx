@@ -5,14 +5,39 @@ import Form, {
   RequiredRule,
   SimpleItem,
 } from "devextreme-react/form";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAppDispatch } from "../../app/hooks";
-import { setRootPassword } from "../../features/rootPassword/rootPasswordSlice";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import {
+  initializeRoot,
+  setRootPassword,
+} from "../../features/rootPassword/rootPasswordSlice";
 import "./login-page.css";
 
 function LoginPage() {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
+  const isInitialized = useAppSelector(
+    (state) => state.rootPassword.isInitialized
+  );
+  const hasRootPassword = useAppSelector(
+    (state) => state.rootPassword.hasRootPassword
+  );
+
+  useEffect(() => {
+    dispatch(initializeRoot());
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (isInitialized === false) {
+      navigate("/init");
+    } else if (isInitialized === true) {
+      if (hasRootPassword) {
+        navigate("/");
+      }
+    }
+  }, [isInitialized]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const rootPasswordFormData = {
     rootPassword: "",
   };
