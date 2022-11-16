@@ -1,7 +1,7 @@
 /*
   Content-Security-Policy: default-src 'self';font-src 'self' fonts.gstatic.com;style-src 'self' fonts.googleapis.com
-  Access-Control-Allow-Origin: https://redisexplorer.com;
-  Access-Control-Allow-Methods: GET;
-  X-Frame-Options: DENY;
-  X-Content-Type-Options: nosniff;
-  Referrer-Policy: no-referrer;
+  Access-Control-Allow-Origin: https://redisexplorer.com
+  Access-Control-Allow-Methods: GET
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
