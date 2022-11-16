@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self';https: 'unsafe-eval' 'unsafe-inline';font-src fonts.gstatic.com;style-src 'self' fonts.googleapis.com
+  Content-Security-Policy: default-src 'self';font-src 'self' fonts.gstatic.com;style-src 'self' fonts.googleapis.com
   Access-Control-Allow-Origin: https://redisexplorer.com;
   Access-Control-Allow-Methods: GET;
   X-Frame-Options: DENY;
