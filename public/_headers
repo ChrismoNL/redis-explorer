@@ -1,0 +1,7 @@
+/*
+  Content-Security-Policy: default-src 'self';
+  Access-Control-Allow-Origin: https://redisexplorer.com;
+  Access-Control-Allow-Methods: GET;
+  X-Frame-Options: DENY;
+  X-Content-Type-Options: nosniff;
+  Referrer-Policy: no-referrer;
