@@ -1,0 +1,34 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  font-size: 0.8em;
+  color: #000;
+  height: 3.5em;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+footer div.footer-content {
+  display: flex;
+  padding: 1em;
+}
+
+footer div.footer-content div.footer-left {
+  flex: 1;
+  text-align: left;
+}
+
+footer div.footer-content div.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+footer div.footer-content a,
+footer div.footer-content a:active,
+footer div.footer-content a:visited {
+  color: rgb(221 122 5);
+  text-decoration: none;
+}
+footer div.footer-content a:hover {
+  text-decoration: underline;
+}

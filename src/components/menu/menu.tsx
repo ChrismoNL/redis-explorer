@@ -3,8 +3,12 @@ import "./menu.css";
 import Toolbar, { Item } from "devextreme-react/toolbar";
 import notify from "devextreme/ui/notify";
 import "devextreme/ui/select_box";
+import { useAppSelector } from "../../app/hooks";
 
 const MenuComponent = () => {
+  const isInitialized = useAppSelector(
+    (state) => state.rootPassword.isInitialized
+  );
   const servers: any[] = [
     {
       id: 1,
@@ -40,21 +44,27 @@ const MenuComponent = () => {
     <Toolbar>
       <Item location="before" locateInMenu="never">
         <div className="toolbar-label">
-          <h1>Redis Explorer</h1>
+          <h1>
+            <strong>Redis</strong>Explorer
+          </h1>
         </div>
       </Item>
-      <Item
-        location="after"
-        locateInMenu="auto"
-        widget="dxSelectBox"
-        options={selectBoxOptions}
-      />
-      <Item
-        location="after"
-        locateInMenu="auto"
-        widget="dxButton"
-        options={addButtonOptions}
-      />
+      {isInitialized === true && (
+        <>
+          <Item
+            location="after"
+            locateInMenu="auto"
+            widget="dxSelectBox"
+            options={selectBoxOptions}
+          />
+          <Item
+            location="after"
+            locateInMenu="auto"
+            widget="dxButton"
+            options={addButtonOptions}
+          />
+        </>
+      )}
     </Toolbar>
   );
 };

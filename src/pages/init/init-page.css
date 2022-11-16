@@ -1,0 +1,20 @@
+div.init-page {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+div.init-page .root-password-form {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  display: inline-block;
+  margin: 20px 0;
+}
+div.init-page p.warning {
+  font-size: 0.9em;
+  font-style: italic;
+  display: inline-block;
+  margin-top: 10px;
+}

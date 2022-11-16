@@ -1,8 +1,12 @@
 .dx-toolbar {
   padding: 10px 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 .toolbar-label h1 {
   margin-top: 0px;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: normal;
+}
+.toolbar-label h1 strong {
+  margin-right: 3 px;
 }
