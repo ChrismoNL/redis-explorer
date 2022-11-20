@@ -9,8 +9,14 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eee !important;
   min-height: 100%;
+}
+
+body.dx-color-scheme-light {
+  background-color: #eee;
+}
+body.dx-color-scheme-dark {
+  background-color: #2a2a2a;
 }
 
 code {

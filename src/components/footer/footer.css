@@ -2,9 +2,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
   font-size: 0.8em;
-  color: #000;
   height: 3.5em;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
 }
@@ -31,4 +29,13 @@ footer div.footer-content a:visited {
 }
 footer div.footer-content a:hover {
   text-decoration: underline;
+}
+
+body.dx-color-scheme-light footer {
+  background-color: #fff;
+  color: #000;
+}
+body.dx-color-scheme-dark footer {
+  background-color: #2a2a2a;
+  color: #dedede;
 }

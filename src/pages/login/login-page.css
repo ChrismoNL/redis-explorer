@@ -1,20 +1,26 @@
-div.init-page {
+div.login-page {
   display: block;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
-div.init-page .root-password-form {
+div.login-page .login-form {
   border-radius: 10px;
-  background-color: #fff;
   padding: 20px;
   display: inline-block;
   margin: 20px 0;
 }
-div.init-page p.warning {
+div.login-page p.warning {
   font-size: 0.9em;
   font-style: italic;
   display: inline-block;
   margin-top: 10px;
+}
+
+body.dx-color-scheme-light div.login-page .login-form {
+  background-color: #fff;
+}
+body.dx-color-scheme-dark div.login-page .login-form {
+  background-color: #3f3f3f;
 }

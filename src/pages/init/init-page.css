@@ -7,7 +7,6 @@ div.init-page {
 }
 div.init-page .root-password-form {
   border-radius: 10px;
-  background-color: #fff;
   padding: 20px;
   display: inline-block;
   margin: 20px 0;
@@ -17,4 +16,11 @@ div.init-page p.warning {
   font-style: italic;
   display: inline-block;
   margin-top: 10px;
+}
+
+body.dx-color-scheme-light div.init-page .root-password-form {
+  background-color: #fff;
+}
+body.dx-color-scheme-dark div.init-page .root-password-form {
+  background-color: #3f3f3f;
 }

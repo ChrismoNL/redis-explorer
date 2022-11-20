@@ -10,3 +10,29 @@
 .toolbar-label h1 strong {
   margin-right: 3 px;
 }
+
+.theme-switch {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 28px;
+  width: 54px;
+  margin-right: 10px;
+  border-radius: 14px;
+}
+.theme-switch .theme-switch-button .light-indicator,
+.theme-switch .theme-switch-button .dark-indicator {
+  width: 54px;
+  height: 28px;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  position: absolute;
+  transition: left 0.1s linear, opacity 0.1s linear;
+}
+
+.theme-switch .theme-switch-button .light-indicator {
+  background-image: url("/public/img/light-mode.svg");
+}
+.theme-switch .theme-switch-button .dark-indicator {
+  background-image: url("/public/img/dark-mode.svg");
+}

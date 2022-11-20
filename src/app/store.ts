@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import rootPasswordReducer from "../features/rootPassword/rootPasswordSlice";
+import themeColorReducer from "../features/themeColor/themeColorSlice";
 
 export const store = configureStore({
   reducer: {
     rootPassword: rootPasswordReducer,
+    themeColor: themeColorReducer,
   },
 });
 

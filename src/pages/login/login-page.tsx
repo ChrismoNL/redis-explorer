@@ -53,7 +53,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="init-page">
+    <div className="login-page">
       <form onSubmit={handleSubmit}>
         <Form
           formData={rootPasswordFormData}
@@ -61,7 +61,7 @@ function LoginPage() {
           showColonAfterLabel={true}
           showValidationSummary={true}
           validationGroup="rootPasswordData"
-          className="root-password-form"
+          className="login-form"
         >
           <GroupItem caption="Login">
             <SimpleItem
